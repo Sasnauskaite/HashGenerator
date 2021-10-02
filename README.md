@@ -23,4 +23,10 @@ Taip įrodau, kad mano programoje įvykdyti šie reikalavimai:
 
 -2. Maišos funkcijos išėjimas (angl. output) visuomet yra to paties, fiksuoto, dydžio rezultatas (pageidautina 256 bit'ų ilgio, t.y., 64 simbolių hex'as).
 
--3. Maišos funkcija yra deterministinė, t. y., tam pačiam įvedimui (input'ui) išvedimas (output'as) visuomet yra tas pats
+*Įrodymas yra viršuje, nesvarbu, kokio ilgio failas, jam vistiek pateikiamas 64 simbolių kodas.*
+
+-3. Maišos funkcija yra deterministinė, t. y., tam pačiam įvedimui (input'ui) išvedimas (output'as) visuomet yra tas pats.
+
+![image](https://user-images.githubusercontent.com/78842487/135724563-00668de9-095b-40e9-98aa-bc5df627f9d4.png)
+
+*Ši ekrano nuotrauka parodo, jog žodžiui „labas" hash kodas visuomet yra tas pats.*
