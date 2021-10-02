@@ -1,0 +1,43 @@
+This article is about darknet websites. For the part of the Internet 
+not accessible by traditional web search engines, see Deep web.
+The dark web is the World Wide Web content that exists on darknets: 
+overlay networks that use the Internet but require specific software, 
+configurations, or authorization to access.Through the 
+dark web, private computer networks can communicate and conduct 
+business anonymously without divulging identifying information, such 
+as a user's location. The dark web forms a small part of the deep web,
+ the part of the Web not indexed by web search engines, although somet
+imes the term deep web is mistakenly used to refer specifically to the 
+dark web.
+The darknets which constitute the dark web include small, friend-to-friend 
+peer-to-peer networks, as well as large, popular networks such as Tor, Freenet,
+ I2P, and Riffle operated by public organizations and individuals. Users of the 
+dark web refer to the regular web as Clearnet due to its unencrypted nature. The 
+Tor dark web or onionland[10] uses the traffic anonymization technique of onion 
+routing under the network's top-level domain suffix .onion.
+Terminology
+Definition
+Main article: Darknet
+The dark web has often been confused with the deep web, the parts of the web not 
+indexed (searchable) by search engines. The term Dark Web first emerged in 2009, 
+however, it is unknown when the actual dark web first emerged.[11] Many internet 
+users only use the surface web, data that can be accessed by a typical Google browser. 
+The dark web forms a small part of the deep web, but requires custom software in order 
+to access its content. This confusion dates back to at least 2009.Since then, especially 
+in reporting on Silk Road, the two terms have often been conflated, despite recommendations
+ that they should be distinguished.
+Tor. Software Logo
+The Dark Web, also known as Darknet websites, are accessible only through networks such as 
+Tor ("The Onion Routing" project) that are created specifically for the Dark Web. Tor browser
+ and Tor-accessible sites are widely used among the darknet users and can be identified by
+ the domain ".onion".[16] Tor browsers create encrypted entry points and pathways for the
+ user, allowing their Dark Web searches and actions to be anonymous.
+Identities and locations of darknet users stay anonymous and cannot be tracked due to the 
+layered encryption system. The darknet encryption technology routes users' data through a 
+large number of intermediate servers, which protects the users' identity and guarantees anonymity. 
+The transmitted information can be decrypted only by a subsequent node in the scheme, which leads 
+to the exit node. The complicated system makes it almost impossible to reproduce the node path 
+and decrypt the information layer by layer. Due to the high level of encryption, websites 
+are not able to track geolocation and IP of their users, and users are not able to get this 
+information about the host. Thus, communication between darknet users is highly encrypted 
+allowing users to talk, blog, and share files confidentially.

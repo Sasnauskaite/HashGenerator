@@ -23,15 +23,29 @@ void txtFILE (string &info)
     in >> info;
     in.close();
 }
+string FilesForComparing (string FileName)
+{
+    string Coming;
+    ifstream in (FileName);
+    in >> Coming;
+    in.close();
+    return Coming;
+}
 void HAND (string &info)
 {
     cout<<"Iveskite norima hash'inti teksta: "<<endl;
     cin >> info;
 }
+string MoreThanOne ()
+{
+    string coming;
+    cout<<"Iveskite norima hash'inti teksta: "<<endl;
+    cin >> coming;
+    return coming;
+}
 void isvedimas(string bye)
 {
-    cout<<"Bits= "<<bye.size()<<endl;
-    cout << "hex: " <<hex<< bye << endl; 
+    cout << "Hex: " <<hex<< bye << endl; 
 }
 void HASHING(string text, string code)
 {
@@ -68,8 +82,10 @@ void HASHING(string text, string code)
             if(arr[i] == letters[j])
             {
                 integer = 0;
-                integer = numbers[j] * INPUTsize;
-                integer = integer + (integer * (INPUTsize * (j + j + 1)));
+                integer = numbers[j+5] * INPUTsize;
+                integer = integer + ((integer+5)* (INPUTsize * (j + j + 3)));
+                //if(integer<0)
+                //    integer=integer*(-1);
                 temprorary = ' ';
                 temprorary = letters[j+1];
                 code += to_string(integer);
@@ -101,18 +117,76 @@ int main()
 {
     string in;
     string answer;
+    int answer2;
     string output;
+    string FileNameInput, inside;
+    vector <string> comparing, FileName;
     cout << "Kokia bus jusu ivestis? (t-tekstinio failo ar n-rankiniu budu)" << endl;
     cin >> answer;
-    if(answer == "t") txtFILE (in);
-    else if(answer == "n") HAND (in);
+    cout << "Kiek atskiru ivesciu norite lyginti? (iveskite skaiciu nuo 1 iki 5)\nJei nenorite lyginti, rasykite 1" << endl;
+    cin >> answer2;
+    if(answer == "t") 
+    {
+        if (answer2>1 && answer2<=5)
+        {
+            for(int i=0; i<answer2; i++)
+            {
+                cout<<"Iveskite "<< i+1<<" skaitomo failo pavadinima:"<<endl;
+                cin>>FileNameInput;
+                FileName.push_back(FileNameInput);
+                string myStr=FilesForComparing(FileNameInput);
+                comparing.push_back(myStr);
+            }
+            cout<<"VYKDOMA..."<<endl;
+            for(int a=0; a<answer2; a++)
+            {
+                cout<<FileName[a]<<": "<<endl;
+                HASHING(comparing[a], output);
+            } 
+        }
+        else if(answer2>5)
+        {
+            cout<<"Norite lyginti per daug ivesciu, paleiskite programa is naujo."<<endl;
+            exit;
+        }
+        else 
+        {
+            txtFILE(in);
+            HASHING(in, output);
+        }
+    }
+    else if(answer == "n") 
+    {
+        
+        if (answer2>1 && answer2<=5)
+        {
+            for(int i=0; i<answer2; i++)
+            {
+                string myStr = MoreThanOne();
+                comparing.push_back(myStr);
+            }
+            for(int a=0; a<answer2; a++)
+            {
+                cout<<comparing[a]<<": "<<endl;
+                HASHING(comparing[a], output);
+            }
+        }
+        else if(answer2>5)
+        {
+            cout<<"Norite lyginti per daug ivesciu, paleiskite programa is naujo."<<endl;
+            exit;
+        }
+        else 
+        {
+            HAND(in);
+            HASHING(in, output);
+        }
+    }
     else 
     {
         cout << "Jusu atsakymas neteisingas, paleiskite programa is naujo" ;
         exit;
     }
-
-    HASHING(in, output);
 
     return 0;
 }
