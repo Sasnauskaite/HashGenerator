@@ -10,10 +10,24 @@ Mano hash funkcijos idėja:
 
 # V0.0.2
 
-Sukurta galimybė lyginti iš skirtingų failų (max 5 failai) sukurtus hash'us vienu metu. Taip įrodau, kad mano programoje įvykdyti šie reikalavimai: 
+Sukurta galimybė lyginti iš skirtingų failų (max 5 failai) sukurtus hash'us vienu metu. 
+Taip įrodau, kad mano programoje įvykdyti šie reikalavimai: 
 
 -1. Maišos funkcijos įėjimas (angl. input) gali būti bet kokio dydžio simbolių eilutė (angl. string).
 
+**ĮRODYMAS:**
+
+![image](https://user-images.githubusercontent.com/78842487/135724404-a697f8b5-c542-43b4-816f-314adb4fbc0b.png)
+
+`*empty.txt failas yra tuščias failas, simbolis.txt turi tik 1 simbolį, o 3000random.txt turi 3000 atsitiktinų simbolių, mano hash funkcija dirba su visais jai paduotais failais.*`
+
 -2. Maišos funkcijos išėjimas (angl. output) visuomet yra to paties, fiksuoto, dydžio rezultatas (pageidautina 256 bit'ų ilgio, t.y., 64 simbolių hex'as).
 
--3. Maišos funkcija yra deterministinė, t. y., tam pačiam įvedimui (input'ui) išvedimas (output'as) visuomet yra tas pats
+`*Įrodymas yra viršuje, nesvarbu, kokio ilgio failas, jam vistiek pateikiamas 64 simbolių kodas.*`
+
+-3. Maišos funkcija yra deterministinė, t. y., tam pačiam įvedimui (input'ui) išvedimas (output'as) visuomet yra tas pats.
+
+![image](https://user-images.githubusercontent.com/78842487/135724563-00668de9-095b-40e9-98aa-bc5df627f9d4.png)
+
+`*Ši ekrano nuotrauka parodo, jog žodžiui „labas" hash kodas visuomet yra tas pats.*`
+
