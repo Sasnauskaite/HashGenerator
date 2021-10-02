@@ -11,6 +11,9 @@ Mano hash funkcijos idėja:
 # V0.0.2
 
 Sukurta galimybė lyginti iš skirtingų failų (max 5 failai) sukurtus hash'us vienu metu. Taip įrodau, kad mano programoje įvykdyti šie reikalavimai: 
+
 -1. Maišos funkcijos įėjimas (angl. input) gali būti bet kokio dydžio simbolių eilutė (angl. string).
+
 -2. Maišos funkcijos išėjimas (angl. output) visuomet yra to paties, fiksuoto, dydžio rezultatas (pageidautina 256 bit'ų ilgio, t.y., 64 simbolių hex'as).
+
 -3. Maišos funkcija yra deterministinė, t. y., tam pačiam įvedimui (input'ui) išvedimas (output'as) visuomet yra tas pats
