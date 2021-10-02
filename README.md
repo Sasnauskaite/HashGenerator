@@ -14,8 +14,11 @@ Sukurta galimybė lyginti iš skirtingų failų (max 5 failai) sukurtus hash'us 
 Taip įrodau, kad mano programoje įvykdyti šie reikalavimai: 
 
 -1. Maišos funkcijos įėjimas (angl. input) gali būti bet kokio dydžio simbolių eilutė (angl. string).
+
 **ĮRODYMAS:**
+
 ![image](https://user-images.githubusercontent.com/78842487/135724404-a697f8b5-c542-43b4-816f-314adb4fbc0b.png)
+
 *empty.txt failas yra tuščias failas, simbolis.txt turi tik 1 simbolį, o 3000random.txt turi 3000 atsitiktinų simbolių, mano hash funkcija dirba su visais jai paduotais failais.*
 
 -2. Maišos funkcijos išėjimas (angl. output) visuomet yra to paties, fiksuoto, dydžio rezultatas (pageidautina 256 bit'ų ilgio, t.y., 64 simbolių hex'as).
