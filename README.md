@@ -46,8 +46,12 @@ Taip įrodau, kad mano programoje įvykdyti šie reikalavimai:
 *Norėdama objektyviai patikrinti SHA256 ir savo hash'avimo funkcijas tikrinau jų veikimą su 100 000 skirtingų stringų (abi funkcijos gavo vienodus stringus).*
 *Kaip ir buvo tikėtasi, mano hash'avimo funkcija yra daug kartų lėtesnė, nei SHA256.*
 
+*Papildomai užduočiai naudojau failą `visos.txt`, tačiau jis buvo per didelis, jog galėčiau jį įkelti į šią repozitoriją.*
+
 **KOLIZIJOS TIKRINIMAS:
 
 ![image](https://user-images.githubusercontent.com/78842487/136350387-e4ecc2ce-5b21-40ec-9663-e94303abebbf.png)
 
 *Visų kolizijos atvejų anuliuoti galutinai nepavyko, tačiau galime pastebėti, jog, kuo ilgesnių stringų pora yra paduodama funkcijai, tuo mažesnė tikimybė, kad hash'ai sutaps.*
+
+*Šiai užduočiai naudojau failus `poros10.txt`, `poros100.txt`, `poros500.txt`, `poros1000.txt`, deja failas `poros1000.txt` buvo per didelis ir negalėjau jo įkelti į šią repozitoriją.*
