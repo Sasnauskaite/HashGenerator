@@ -31,3 +31,19 @@ Taip įrodau, kad mano programoje įvykdyti šie reikalavimai:
 
 `*Ši ekrano nuotrauka parodo, jog žodžiui „labas" hash kodas visuomet yra tas pats.*`
 
+# V0.0.3
+
+Ištirtas sukurtos fnkcijos efektyvumas:
+
+![image](https://user-images.githubusercontent.com/78842487/136349847-9a4c8215-2dcc-456e-bffd-fdc6ba9caef3.png)
+
+
+Papildoma užduotis:
+
+![image](https://user-images.githubusercontent.com/78842487/136349993-611ad1b2-7471-4e5b-85ad-854de70d751a.png)
+
+Kolizijos tikrinimas:
+
+![image](https://user-images.githubusercontent.com/78842487/136350387-e4ecc2ce-5b21-40ec-9663-e94303abebbf.png)
+
+
