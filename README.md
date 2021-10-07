@@ -37,13 +37,17 @@ Ištirtas sukurtos fnkcijos efektyvumas:
 
 ![image](https://user-images.githubusercontent.com/78842487/136349847-9a4c8215-2dcc-456e-bffd-fdc6ba9caef3.png)
 
+*Hash'uodama skirtingas failo `konstitucija.txt` eilutes mano sukurta funkcija užtruko tiek laiko.
 
 Papildoma užduotis:
 
 ![image](https://user-images.githubusercontent.com/78842487/136349993-611ad1b2-7471-4e5b-85ad-854de70d751a.png)
 
+*Norėdama objektyviai patikrinti SHA256 ir savo hash'avimo funkcijas tikrinau jų veikimą su 100 000 skirtingų stringų (abi funkcijos gavo vienodus stringus)
+*Kaip ir buvo tikėtasi, mano hash'avimo funkcija yra daug kartų lėtesnė, nei SHA256
+
 Kolizijos tikrinimas:
 
 ![image](https://user-images.githubusercontent.com/78842487/136350387-e4ecc2ce-5b21-40ec-9663-e94303abebbf.png)
 
-
+*Visų kolizijos atvejų anuliuoti galutinai nepavyko, tačiau galime pastebėti, jog, kuo ilgesnių stringų pora yra paduodama funkcijai, tuo mažesnė tikimybė, kad hash'ai sutaps.
