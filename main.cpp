@@ -208,7 +208,6 @@ int Kolizija10(int NumOfstrings, vector<string> poros10)
         }
         i++;
     }
-    cout<<diff<<"For 10"<<endl;
     SameHash10=25000-diff;
     return SameHash10;
 }
@@ -322,6 +321,54 @@ string FileForPapildoma()
     in.close();
     Papildoma(words);
 }
+void Skirtingumas()
+{
+    vector <string> wrd;
+    string ww, code, code2;
+    int equal =0, percentage[40], num=0, nn=0;
+    int minimal=100, maximal=0;
+    double all;
+    ifstream in ("skirtingumas.txt");
+    for(int i=0; i<80; i++)
+    {
+        in >> ww;
+        wrd.push_back(ww);
+    }
+    in.close();
+    for(int a=0; a<80; a++)
+    {
+        code = HASHING2(wrd[a]);
+        code2 = HASHING2(wrd[a+1]);
+        for(int b=0; b<64; b++)
+        {
+            if(code[b] == code2[b])
+            {
+                equal++;
+            }
+        }
+        percentage[num]=64/equal;
+        if(num>-1 && percentage[num]>maximal)
+        {
+            maximal=percentage[num];
+        }
+        if(num>-1 && percentage[num]<minimal)
+        {
+            minimal=percentage[num];
+        }
+        a++;
+        equal=0;
+        num++;
+    }
+    for(int jj=0; jj<40; jj++)
+    {
+        nn+=percentage[jj];
+    }
+    all=nn/40;
+    cout<<"HEX LYGMENYJE:"<<endl;
+    cout<<"Minimali skirtingumo reiksme: "<<minimal<<"%"<<endl;
+    cout<<"Maksimali skirtingumo reiksme: "<<maximal<<"%"<<endl;
+    cout<<"Visu 40 poru skirtingumo koeficientas: "<<all<<"%"<<endl;
+}
 int main(int argc, char *argv[])
 {
     setlocale(LC_ALL, "Lithuanian");
@@ -391,7 +438,7 @@ int main(int argc, char *argv[])
     }
     else if(answer=="l")
     {
-        cout << "Ka norite tikrinti? \n(e-efektyvuma / k-kolizija / p-papildoma)" << endl;
+        cout << "Ka norite tikrinti? \n(e-efektyvuma / k-kolizija / p-papildoma / s-skirtinguma)" << endl;
         cin >> answer1;
         if(answer1=="e")
         {
@@ -404,6 +451,10 @@ int main(int argc, char *argv[])
         else if(answer1=="p")
         {
             FileForPapildoma();
+        }
+        else if(answer1=="s")
+        {
+            Skirtingumas();
         }
     }
     else 
