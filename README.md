@@ -54,4 +54,4 @@ Taip įrodau, kad mano programoje įvykdyti šie reikalavimai:
 
 *Visų kolizijos atvejų anuliuoti galutinai nepavyko, tačiau galime pastebėti, jog, kuo ilgesnių stringų pora yra paduodama funkcijai, tuo mažesnė tikimybė, kad hash'ai sutaps.*
 
--*Šiai užduočiai naudojau failus `poros10.txt`, `poros100.txt`, `poros500.txt`, `poros1000.txt`, deja failas `poros1000.txt` buvo per didelis ir negalėjau jo įkelti į šią repozitoriją.*
+*Šiai užduočiai naudojau failus `poros10.txt`, `poros100.txt`, `poros500.txt`, `poros1000.txt`, deja failas `poros1000.txt` buvo per didelis ir negalėjau jo įkelti į šią repozitoriją.*
