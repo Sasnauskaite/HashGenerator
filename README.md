@@ -55,3 +55,24 @@ Taip įrodau, kad mano programoje įvykdyti šie reikalavimai:
 *Visų kolizijos atvejų anuliuoti galutinai nepavyko, tačiau galime pastebėti, jog, kuo ilgesnių stringų pora yra paduodama funkcijai, tuo mažesnė tikimybė, kad hash'ai sutaps.*
 
 *Šiai užduočiai naudojau failus `poros10.txt`, `poros100.txt`, `poros500.txt`, `poros1000.txt`, deja failas `poros1000.txt` buvo per didelis ir negalėjau jo įkelti į šią repozitoriją.*
+
+# V0.1
+
+Ši versija yra galutinė mano hash generatoriaus versija. Ji yra papildyta procentinio skirtingumo skaičiuokle, kuri parodo, kaip mano programa atitinka *lavinos efekto* reikalavimą.
+
+![image](https://user-images.githubusercontent.com/78842487/136405198-0df2680b-7c83-4479-843c-d75aeaad25fb.png)
+
+# IŠVADOS 
+
+Taigi, atlikus šią analizę galiu teigti, jog ne visus reikalavimus sugebėjau įgyvendinti.
+
+**1.** Mano funkcija nėra pilnai atspari kolizijai. Manau, kad taip yra dėl to, jog hash'indama trumpus stringus pridedu atsitiktinius skaičius, o jie dažnai sutampa.
+
+**2.** Mano funkcijos skirtingumo koeficientas yra labai mažas.
+
+Visus kitus reikalavimus išpildžiau:
+
+ - funkcija yra deterministinė. 
+ - ji visus, bet kokio ilgio, jai pateikiamus string'us paverčia 64 simbolių ilgio hex kodais.
+ - funkcijos reikšmė bet kokiai input'o reikšmei yra apskaičiuojamas pakankamai greitai.
+ - iš funkcijos rezultato beveik neįmanoma atgaminti pradinės reikšmės.
